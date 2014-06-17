@@ -23,7 +23,7 @@
     <xsl:variable name="lang.description" select="'Description'"/>
     <xsl:variable name="lang.url" select="'URL'"/>
     <xsl:variable name="lang.profileof" select="'Profile of'"/>
-    <xsl:variable name="lang.search" select="'Suche'"/>
+    <xsl:variable name="lang.search" select="'Search'"/>
 
     <!-- function that either picks the node with the correct language or the
          one without a lang attribute -->
