@@ -19,6 +19,7 @@ Popo generates static HTML documents, one for each language.
 
 **Examples:** [profile\_en.html](http://movb.de/popodemo/profile_en.html), [profile\_de.html](http://movb.de/popodemo/profile_de.html)
 
+**Usage:** Just call `make`.
 
 ## Presentation
 
