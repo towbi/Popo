@@ -1,0 +1,97 @@
+$grid-size: 500px;
+$lhs-size: 120px;
+$border-spacing: 8px;
+$color: #ABF;
+$special-padding: 6px;
+$clear-icon-size: 26px;
+$grid-spacing: 0;
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#wrappy {
+    width: 100%;
+    margin-left: $grid-spacing;
+    margin-top: $grid-spacing;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    padding: 0;
+}
+
+.cell {
+    background: #FFF;
+    width: $grid-size;
+    margin-bottom: $grid-spacing;
+    &.head {
+        padding: $border-spacing;
+        height: $lhs-size;
+        h1 {
+            color: $color / 1.5;
+        }
+        input {
+            width: $grid-size - $clear-icon-size - 2 * $border-spacing - $special-padding;
+            height: 2.2em;
+            line-height: 2em;
+            font-size: 1.0em;
+            border-radius: 0.2em;
+            border: 2px solid $color;
+            padding: $special-padding;
+        }
+        a {
+            position: relative;
+            top: $border-spacing;
+            left: $special-padding;
+            img {
+                width: $clear-icon-size;
+            }
+        }
+    }
+    .work {
+        width: 100%;
+        padding: $special-padding;
+        span {
+            display: inline-block;
+            padding: $special-padding;
+            color: #FFF;
+            background: $color;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            border-radius: 0.2em;
+            width: 100%;
+        }
+    }
+    .content .profile {
+        border-spacing: $border-spacing;
+        margin: 0;
+        padding: 0;
+        padding: $special-padding;
+        margin-bottom: $border-spacing * 2;
+        width: 100%;
+        th {
+            padding: 0;
+            margin: 0;
+            text-align: right;
+            vertical-align: top;
+            min-width: $lhs-size;
+        }
+        td {
+            vertical-align: top;
+            /*max-width: 400px;*/
+        }
+    }
+}
+
+.grid-sizer {
+    width: $grid-size;
+}
+

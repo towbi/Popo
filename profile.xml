@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="profile_en.xslt"?>
+
+<profile title="Jonathan Doe">
+    <unit>
+        <work xml:lang="de">Browser-Gewinnspiele</work>
+        <work xml:lang="en">Browser competitions</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and implementation</role>
+        <tooling>HTML5, JavaScript, PHP 5, Symfony, Wordpress, Box2D.js, Facebook Graph API</tooling>
+        <endcustomer>Blue Yonder Airlines</endcustomer>
+        <agency>Adventure Works</agency>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">Entwicklung einer Reihe von browserbasierten Gewinnspielen im Front- und Backend</description>
+        <description xml:lang="en">Development of a series of browser based competitions in the frontend and backend</description>
+        <url>http://example.org/</url>
+        <starttime>2012</starttime>
+        <endtime>2013</endtime>
+    </unit>
+    <unit>
+        <work xml:lang="de">HTTPS-Migration</work>
+        <work xml:lang="en">HTTPS migration</work>
+        <role xml:lang="de">Konzeption/Umsetzung</role>
+        <role xml:lang="en">Conception/Implementation</role>
+        <tooling>Apache, Wordpress, PHP 5, Debian GNU/Linux</tooling>
+        <description xml:lang="de">Unterstützung des Endkunden bei der Migration einer Reihe von Blogs von HTTP nach HTTPS</description>
+        <description xml:lang="en">Unterstützung des Endkunden bei der Migration einer Reihe von Blogs von HTTP nach HTTPS</description>
+        <endcustomer>Lawn and Order Property Maintenance</endcustomer>
+        <agency>Adventure Works</agency>
+        <employer>CHOAM</employer>
+        <endtime>2013</endtime>
+    </unit>
+    <unit>
+        <name>WasteAway HTML</name>
+        <work xml:lang="de">HTML5-Spiel</work>
+        <work xml:lang="en">HTML5 game</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and Implementation</role>
+        <tooling>HTML5, Crafty.js, JavaScript, Symfony, Apache</tooling>
+        <endcustomer>Waste Recycling Ltd</endcustomer>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">HTML5-Adaption eines Java-Spiels zur Steigerung des Bewusstseins der Gefahren von Müll</description>
+        <description xml:lang="en">HTML5 adaptation of a Java game to raise awareness for the dangers of waste</description>
+        <url>http://www.example.net/</url>
+        <starttime>2012</starttime>
+        <endtime>2013</endtime>
+    </unit>
+    <unit>
+        <name>WasteAway</name>
+        <work>Serious Gaming</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and Implementation</role>
+        <tooling>Java, LWJGL, OpenGL, SQLite</tooling>
+        <endcustomer xml:lang="de">Umbrella Corporation</endcustomer>
+        <agency>Cyberdyne Systems</agency>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">Umsetzung eines umfangreichen Änderungsauftrags für ein inhouse entwickeltes Multiplayer-Spiel</description>
+        <description xml:lang="en">Implementation of an extensive request of modification for a multiplayer game (inhouse solution)</description>
+        <url>http://www.example.org/</url>
+        <endtime>2012</endtime>
+    </unit>
+    <unit>
+        <name>BioData</name>
+        <work xml:lang="de">Bioinformatik und Datenmanagement</work>
+        <work xml:lang="en">Bioinformatics and data management</work>
+        <role xml:lang="de">Backend Administration</role>
+        <role xml:lang="en">Backend administration</role>
+        <tooling>SunOS, GNU/Linux, SSH, rsync, shell scripting</tooling>
+        <endcustomer>Black Mesa East</endcustomer>
+        <employer>Aperture Science Laboratories</employer>
+        <description xml:lang="de">Entwicklung und Pflege einer verteilten Lösung zum Austausch und zur Verarbeitung von Forschungsdaten</description>
+        <description xml:lang="en">Development and implementation of a distributed solution to exchange and process scientific data</description>
+        <url>http://www.example.net/</url>
+        <starttime>2008</starttime>
+        <endtime>2014</endtime>
+    </unit>
+    <unit>
+        <name>xz</name>
+        <work xml:lang="de">Datenmanagement</work>
+        <work xml:lang="en">Data management</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and implementation</role>
+        <tooling>Perl, SQLite, shell scripting</tooling>
+        <employer>Omni Consumer Products</employer>
+        <description xml:lang="de">Entwicklung einer Middleware zur Verarbeitung regelmäßig aktualisierter Forschungsdaten</description>
+        <description xml:lang="en">Development of a middleware to process regularly updated scientific data</description>
+        <url>https://example.net</url>
+        <starttime>2009</starttime>
+        <endtime>2012</endtime>
+    </unit>
+    <unit>
+        <name>Weatherman</name>
+        <work xml:lang="de">Diplomarbeit</work>
+        <work xml:lang="en">Diploma thesis</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and implementation</role>
+        <tooling xml:lang="en">Perl, Moose, MessagePack, event driven programming (AnyEvent), OpenSSL</tooling>
+        <tooling xml:lang="de">Perl, Moose, MessagePack, ereignisgesteuerte Programmierung (AnyEvent), OpenSSL</tooling>
+        <employer xml:lang="de">selbstständig</employer>
+        <employer xml:lang="en">self employed</employer>
+        <description xml:lang="de">Konzeption und Entwicklung einer verteilten Anwendung zum koordinieren und durchführen der Übertragung von Wetterdaten</description>
+        <description xml:lang="en">Development and implementation of a distributed solution to exchange and process weather data</description>
+        <starttime>2011</starttime>
+        <endtime>2012</endtime>
+    </unit>
+    <unit>
+        <name>Breedster</name>
+        <work xml:lang="de">Frontend-Entwicklung</work>
+        <work xml:lang="en">Frontend development</work>
+        <role xml:lang="de">Umsetzung</role>
+        <role xml:lang="en">Implementation</role>
+        <tooling>Java EE, Eclipse, IBM WebSphere Liberty, JBoss</tooling>
+        <endcustomer>CHOAM</endcustomer>
+        <employer>Haspel Corporation</employer>
+        <description xml:lang="de">Technische Umsetzung von Fachkonzepten für Anwendungen für Berater im Bereich Tierzucht</description>
+        <description xml:lang="en">Technical implementation of business specifications for applications for consultants in the field of animal breeding</description>
+        <url>http://www.example.org</url>
+        <starttime>2014</starttime>
+        <endtime>2015</endtime>
+    </unit>
+    <unit>
+        <work xml:lang="de">Server-Administration</work>
+        <work xml:lang="en">Server administration</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and implementation</role>
+        <tooling>GNU/Linux, Debian packaging, LVM, shell scripting, Apache, HTTP/HTTPS, Git, gitolite, SSH, Exim, Postfix</tooling>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">Erarbeitung und Implementation von Administrationsrichtlinien, Migrierung und Konsolidierung von Altsystemen, Erarbeitung und Umsetzung von Sicherheitsrichtlinien, Entwicklung und Einrichtung eines eigenen Backupsystems</description>
+        <description xml:lang="en">Conception and implementation of technical administration policies, migration and consolidation of legacy systems, development and realization of security policies, development and installation of a custom backup system</description>
+        <url>http://www.example.de/</url>
+        <starttime>2012</starttime>
+        <endtime>2013</endtime>
+    </unit>
+    <unit>
+        <name>fnordjesk</name>
+        <work xml:lang="de">Webanwendung</work>
+        <work xml:lang="en">Web application</work>
+        <role xml:lang="de">Konzeption, Umsetzung und Schulung</role>
+        <role xml:lang="en">Conception, implementation and training</role>
+        <tooling xml:lang="de">Perl, CGI::Application, JavaScript, jQuery, RTF (Textformat), Zeichensätze und -kodierungen</tooling>
+        <tooling xml:lang="en">Perl, CGI::Application, JavaScript, jQuery, RTF (text format), charsets and encodings</tooling>
+        <endcustomer>Mittelos Bioscience</endcustomer>
+        <agency>Umbrella Corporation</agency>
+        <employer xml:lang="de">selbstständig</employer>
+        <employer xml:lang="en">self employed</employer>
+        <description xml:lang="de">Multilinugale Webanwendung zur Verwaltung von Zuchtdaten von Fnords</description>
+        <description xml:lang="en">Multilinugal web application to manage breeding data of Fnords</description>
+        <url>http://www.example.org/</url>
+        <starttime>2008</starttime>
+        <endtime>2012</endtime>
+    </unit>
+    <unit>
+        <name>Modall</name>
+        <work xml:lang="de">Modellier-Framework</work>
+        <work xml:lang="en">Modelling framework</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and implementation</role>
+        <tooling xml:lang="de">Scala (2.10/2.11), Akka, RabbitMQ, Parserkombinatoren, Reflection, IntelliJ IDEA, sbt, ScalaTest</tooling>
+        <tooling xml:lang="en">Scala (2.10/2.11), Akka, RabbitMQ, parser combinators, reflection, IntelliJ IDEA, sbt, ScalaTest</tooling>
+        <endcustomer xml:lang="de">SOME EU-Projekt</endcustomer>
+        <endcustomer xml:lang="en">SOME EU Project</endcustomer>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">Konzeption und Erstellung eines Programmierframeworks zum Design und Ausführen von Modellen in 11-dimensionalem Raum</description>
+        <description xml:lang="en">Conception and implementation of a programming framework to design and execute modellings in 11-dimensional space</description>
+        <starttime>2012</starttime>
+        <endtime>2013</endtime>
+    </unit>
+    <unit>
+        <name>Anitrak</name>
+        <work xml:lang="de">Embedded Echtzeit-Sensorsystem</work>
+        <work xml:lang="en">Embedded real-time sensor system</work>
+        <role xml:lang="de">Konzeption und Umsetzung</role>
+        <role xml:lang="en">Conception and implementation</role>
+        <tooling>ANSI C, Turbo C 2.01, RS-232/485</tooling>
+        <employer>Trey Research Inc.</employer>
+        <description xml:lang="de">Konzeption und Erstellung einer Software für eingebettete Systeme (Intel 80186 Architektur) zur Echtzeitüberwachung des Methanausstoßes von Fröschen</description>
+        <description xml:lang="en">Conception and implementation of embedded system software (Intel 80186 architecture) for the real-time analysis of methane emission of frogs</description>
+        <starttime>2005</starttime>
+        <endtime>2008</endtime>
+    </unit>
+    <unit>
+        <name xml:lang="de">Kurzfilme der 86ten Filmcademy-Awards</name>
+        <name xml:lang="en">86th Filmcademy-Awards short films</name>
+        <work xml:lang="de">Wordpress Plugin/Video-Verarbeitung</work>
+        <work xml:lang="en">Wordpress plugin/Video processing</work>
+        <role xml:lang="de">Backend-Entwicklung</role>
+        <role xml:lang="en">Backend development</role>
+        <tooling xml:lang="de">FFmpeg, mkvtoolnix, Wordpress, HTML5-Video, Cross-Browser-Kompatibilität, php-resque (Job-Queueing), Vimeo API</tooling>
+        <tooling xml:lang="en">FFmpeg, mkvtoolnix, HTML5-Video, cross browser compatibility, php-resque (job queueing), Vimeo API</tooling>
+        <endcustomer>Filmcademy-Awards</endcustomer>
+        <agency>Adventure Works</agency>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">Konzeption und Erstellung eines Wordpress Plugins zum Zusammenfügen von HTML5-kompatiblen Videodateien und Hochladen auf Vimeo</description>
+        <description xml:lang="en">Conception and implementation of a Wordpress plugin for merging HTML5 compatible video files and uploading to Vimeo</description>
+        <endtime>2013</endtime>
+    </unit>
+    <unit>
+        <name xml:lang="de">Schuh-Ahoi Schuhkonfigurator</name>
+        <name xml:lang="en">Shoe Ahoy shoe configurator</name>
+        <work xml:lang="de">Dynamische Generierung von Produktfotos</work>
+        <work xml:lang="en">Dynamic creation of product images</work>
+        <role xml:lang="de">Algorithmen-Entwicklung</role>
+        <role xml:lang="en">Algorithm development</role>
+        <tooling xml:lang="de">HTML5-Canvas, (reines) JavaScript, Bild-Überblendverfahren, Cross-Browser-Kompatibilität, Magento</tooling>
+        <tooling xml:lang="en">HTML5-Canvas, (pure) JavaScript, image blend modes, cross browser compatibility, Magento</tooling>
+        <endcustomer xml:lang="de">Schuh-Ahoi</endcustomer>
+        <endcustomer xml:lang="en">Shoe Ahoy</endcustomer>
+        <agency>Brand Corporation</agency>
+        <employer>CHOAM</employer>
+        <description xml:lang="de">Entwicklung eines Verfahrens zur dynamischen Generierung von hochwertigen und naturgetreuen Produktfotos; Konzeption des Produktkonfigurators für Magento auf Backend-Seite</description>
+        <description xml:lang="en">Development of a method to dynamically create high-quality and realistic product images; Conception for the product configuration tool for Magento (backend)</description>
+        <url>http://www.example.de/</url>
+        <endtime>2013</endtime>
+    </unit>
+</profile>
+
