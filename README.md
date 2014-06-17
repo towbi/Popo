@@ -17,7 +17,7 @@ The information included per project is:
 
 Popo generates static HTML documents, one for each language.
 
-**Examples:** [profile\_en.html](profile_en.html), [profile\_de.html](profile_de.html)
+**Examples:** [profile\_en.html](http://movb.de/popodemo/profile_en.html), [profile\_de.html](http://movb.de/popodemo/profile_de.html)
 
 
 ## Presentation
