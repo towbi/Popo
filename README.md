@@ -84,6 +84,7 @@ another location Popo's Makefile has to be changed accordingly.
 * Packaging and dependency management (especially to get Saxon HE onto the
   system)
 * Remove hard-coding of Saxon HE JAR path in [Makefile](Makefile)
+* Remove hard-coding of sass in [Makefile](Makefile)
 * Cross-browser compatibility
 
 
