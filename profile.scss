@@ -2,9 +2,11 @@ $grid-size: 500px;
 $lhs-size: 120px;
 $border-spacing: 8px;
 $color: #ABF;
+$cell-head-color: transparent;
 $special-padding: 6px;
 $clear-icon-size: 26px;
 $grid-spacing: 10px;
+$font-color: #555;
 
 * {
     -moz-box-sizing: border-box;
@@ -63,12 +65,14 @@ $grid-spacing: 10px;
             display: inline-block;
             padding: $special-padding;
             color: #FFF;
-            background: $color;
+            background: $cell-head-color;
+            text-shadow: 0px 0px 14px rgba($color * 1.4, 0.7);
             font-weight: bold;
             text-align: center;
             margin: 0;
             border-radius: 0.2em;
             width: 100%;
+            font-size: 2em;
         }
     }
     .content .profile {
@@ -84,10 +88,19 @@ $grid-spacing: 10px;
             text-align: right;
             vertical-align: top;
             min-width: $lhs-size;
+            color: $font-color;
         }
         td {
             vertical-align: top;
+            color: $font-color;
             /*max-width: 400px;*/
+        }
+    }
+    a {
+        color: $color / 1.5;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }

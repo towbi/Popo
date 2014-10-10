@@ -11,7 +11,7 @@
          <div id="container">
             <div class="cell head">
                <h1>Profile of Jonathan Doe</h1><input type="text" placeholder="Search"><a href="javascript:clearSearch()" title="clear search"><img src="img/Gnome-edit-clear.svg"></a></div>
-            <div class="cell">
+            <div class="cell" data-endtime="2015">
                <div class="work"><span class="heading">Frontend development</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            &#xA;                                                grid-sizer&#xA;                                            ">
@@ -52,7 +52,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2014">
                <div class="work"><span class="heading">Bioinformatics and data management</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -93,7 +93,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">Browser competitions</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -132,7 +132,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">HTTPS migration</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -169,7 +169,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">HTML5 game</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -208,7 +208,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">Server administration</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -244,7 +244,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">Modelling framework</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -283,7 +283,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">Wordpress plugin/Video processing</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -326,7 +326,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2013">
                <div class="work"><span class="heading">Dynamic creation of product images</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -371,7 +371,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2012">
                <div class="work"><span class="heading">Serious Gaming</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -416,7 +416,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2012">
                <div class="work"><span class="heading">Data management</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -451,7 +451,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2012">
                <div class="work"><span class="heading">Diploma thesis</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -484,7 +484,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2012">
                <div class="work"><span class="heading">Web application</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -527,7 +527,7 @@
                   </table>
                </div>
             </div>
-            <div class="cell">
+            <div class="cell" data-endtime="2008">
                <div class="work"><span class="heading">Embedded real-time sensor system</span></div>
                <div class="content">
                   <table class="&#xA;                                            profile&#xA;                                            ">
@@ -562,6 +562,9 @@
             </div>
          </div>
       </div><script src="js/jquery-2.1.1.min.js"></script><script src="js/isotope.pkgd.min.js"></script><script>
+                    // HSV gradient (generated here: http://www.perbang.dk/rgbgradient/)
+                    var colors = ['#F4F2D7', '#EDF3D7', '#E4F3D7', '#DCF3D7', '#D7F3DB', '#D7F3E3',
+                                  '#D7F3EB', '#D7F2F3', '#D7EAF3', '#D7E2F3'];
 
                     var iso = new Isotope('#container', {
                         itemSelector: '.cell',
@@ -601,6 +604,29 @@
                             }
                         });
                     });
+
+                    // color cell background according to project date
+                    (function () {
+                        var dates = $('.cell').map(function () { return $(this).data('endtime') });
+                        var min = Math.min.apply(Math, dates);
+                        var max = Math.max.apply(Math, dates);
+                        var max_dist = max - min;
+
+                        $('.cell').each(function () {
+                            var endtime = $(this).data('endtime');
+                            if (endtime != null) {
+                                // pick color
+                                var dist = max - endtime;
+                                var color = colors[Math.floor((dist/max_dist)*(colors.length-1))];
+                                $(this).css('background', color);
+                            }
+                            else {
+                                $(this).css('background', colors[0]);
+                                $(this).find('input').css('background' , '#F6F6F6');
+                            }
+                        });
+
+                    })();
 
                 </script></body>
 </html>

@@ -64,6 +64,7 @@
                             <xsl:sort select="endtime" order="descending" />
 
                             <div class="cell">
+                                <xsl:attribute name="data-endtime"><xsl:value-of select="movb:getstr(endtime)" /></xsl:attribute>
                                 <div class="work">
                                     <span class="heading"><xsl:value-of select="movb:getstr(work)" /></span>
                                 </div>
@@ -164,6 +165,9 @@
                 <script src="js/jquery-2.1.1.min.js"></script>
                 <script src="js/isotope.pkgd.min.js"></script>
                 <script>
+                    // HSV gradient (generated here: http://www.perbang.dk/rgbgradient/)
+                    var colors = ['#F4F2D7', '#EDF3D7', '#E4F3D7', '#DCF3D7', '#D7F3DB', '#D7F3E3',
+                                  '#D7F3EB', '#D7F2F3', '#D7EAF3', '#D7E2F3'];
 
                     var iso = new Isotope('#container', {
                         itemSelector: '.cell',
@@ -203,6 +207,29 @@
                             }
                         });
                     });
+
+                    // color cell background according to project date
+                    (function () {
+                        var dates = $('.cell').map(function () { return $(this).data('endtime') });
+                        var min = Math.min.apply(Math, dates);
+                        var max = Math.max.apply(Math, dates);
+                        var max_dist = max - min;
+
+                        $('.cell').each(function () {
+                            var endtime = $(this).data('endtime');
+                            if (endtime != null) {
+                                // pick color
+                                var dist = max - endtime;
+                                var color = colors[Math.floor((dist/max_dist)*(colors.length-1))];
+                                $(this).css('background', color);
+                            }
+                            else {
+                                $(this).css('background', colors[0]);
+                                $(this).find('input').css('background' , '#F6F6F6');
+                            }
+                        });
+
+                    })();
 
                 </script>
             </body>
