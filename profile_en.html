@@ -566,7 +566,9 @@
                     var iso = new Isotope('#container', {
                         itemSelector: '.cell',
                         masonry: {
-                            columnWidth: '.grid-sizer'
+                            columnWidth: '.grid-sizer',
+                            isFitWidth: true,
+                            gutter: 10
                         }
                     });
 
