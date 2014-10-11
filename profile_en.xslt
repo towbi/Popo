@@ -45,6 +45,7 @@
                 <title><xsl:value-of select="//profile/@title"/></title>
                 <link rel="stylesheet" href="profile.css" />
                 <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css' /> -->
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </head>
             <body>
                 <div id="wrappy">
