@@ -1,7 +1,7 @@
 $grid-size: 500px;
 $lhs-size: 120px;
 $border-spacing: 8px;
-$color: #ABF;
+$color: #67B;
 $cell-head-color: transparent;
 $special-padding: 6px;
 $clear-icon-size: 26px;
@@ -38,7 +38,8 @@ $font-color: #555;
         padding: $border-spacing;
         height: $lhs-size;
         h1 {
-            color: $color / 1.5;
+            text-align: center;
+            color: $color;
         }
         input {
             width: $grid-size - $clear-icon-size - 2 * $border-spacing - $special-padding;
@@ -64,9 +65,8 @@ $font-color: #555;
         span {
             display: inline-block;
             padding: $special-padding;
-            color: #FFF;
+            color: $color;
             background: $cell-head-color;
-            text-shadow: 0px 0px 14px rgba($color * 1.4, 0.7);
             font-weight: bold;
             text-align: center;
             margin: 0;
