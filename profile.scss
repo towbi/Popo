@@ -36,26 +36,27 @@ $font-color: #555;
     margin-bottom: $grid-spacing;
     &.head {
         padding: $border-spacing;
-        height: $lhs-size;
-        h1 {
-            text-align: center;
-            color: $color;
-        }
-        input {
-            width: $grid-size - $clear-icon-size - 2 * $border-spacing - $special-padding;
-            height: 2.2em;
-            line-height: 2em;
-            font-size: 1.0em;
-            border-radius: 0.2em;
-            border: 2px solid $color;
-            padding: $special-padding;
-        }
-        a {
-            position: relative;
-            top: $border-spacing;
-            left: $special-padding;
-            img {
-                width: $clear-icon-size;
+        .inner {
+            h1 {
+                text-align: center;
+                color: $color;
+            }
+            input {
+                width: $grid-size - $clear-icon-size - 2 * $border-spacing - $special-padding;
+                height: 2.2em;
+                line-height: 2em;
+                font-size: 1.0em;
+                border-radius: 0.2em;
+                border: 2px solid $color;
+                padding: $special-padding;
+            }
+            a {
+                position: relative;
+                top: $border-spacing;
+                left: $special-padding;
+                img {
+                    width: $clear-icon-size;
+                }
             }
         }
     }

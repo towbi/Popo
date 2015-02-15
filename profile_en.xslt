@@ -51,15 +51,17 @@
                 <div id="wrappy">
                     <div id="container">
                         <div class="cell head">
-                            <h1>
-                                <xsl:value-of select="$lang.profileof" /> 
-                                <xsl:text disable-output-escaping="yes"> </xsl:text>
-                                <xsl:value-of select="//profile/@title"/>
-                            </h1>
-                            <input type="text">
-                                <xsl:attribute name="placeholder"><xsl:value-of select="$lang.search" /></xsl:attribute>
-                            </input>
-                            <a href="javascript:clearSearch()" title="clear search"><img src="img/Gnome-edit-clear.svg" /></a>
+                            <div class="inner">
+                                <h1>
+                                    <xsl:value-of select="$lang.profileof" /> 
+                                    <xsl:text disable-output-escaping="yes"> </xsl:text>
+                                    <xsl:value-of select="//profile/@title"/>
+                                </h1>
+                                <input type="text">
+                                    <xsl:attribute name="placeholder"><xsl:value-of select="$lang.search" /></xsl:attribute>
+                                </input>
+                                <a href="javascript:clearSearch()" title="clear search"><img src="img/Gnome-edit-clear.svg" /></a>
+                            </div>
                         </div>
                         <xsl:for-each select="profile/unit">
                             <xsl:sort select="endtime" order="descending" />
