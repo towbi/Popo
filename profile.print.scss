@@ -1,0 +1,11 @@
+.cell {
+    page-break-inside: avoid;
+    &.head {
+        .inner {
+            a, input {
+                display: none;
+            }
+        }
+    }
+}
+

@@ -34,6 +34,7 @@ $font-color: #555;
     background: #FFF;
     width: $grid-size;
     margin-bottom: $grid-spacing;
+    page-break-inside: avoid;
     &.head {
         padding: $border-spacing;
         .inner {

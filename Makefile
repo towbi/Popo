@@ -21,6 +21,7 @@ $(P):
 css:
 	@echo Generating CSS from SCSS ...
 	sass $(P).scss > $(P).css
+	sass $(P).print.scss > $(P).print.css
 	@echo
 
 .PHONY: clean

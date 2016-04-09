@@ -42,8 +42,13 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title><xsl:value-of select="//profile/@title"/></title>
+                <title>
+                    <xsl:value-of select="$lang.profileof" />
+                    <xsl:text disable-output-escaping="yes"> </xsl:text>
+                    <xsl:value-of select="//profile/@title"/>
+                </title>
                 <link rel="stylesheet" href="profile.css" />
+                <link rel="stylesheet" href="profile.print.css" media="print" />
                 <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css' /> -->
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </head>
