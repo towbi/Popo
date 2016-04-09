@@ -90,7 +90,7 @@ another location Popo's Makefile has to be changed accordingly.
 
 ## License
 
-**Copyright (C) 2014-06 Tobias M.-Nissen <mailto:tn@movb.de>**
+**Copyright (C) 2016-04 Tobias M.-Nissen <mailto:tn@movb.de>**
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
