@@ -1,4 +1,6 @@
 tmp/
 profile_production.xml
 .sass-cache/
-
+*.css
+*.html
+*.komodoproject
