@@ -91,6 +91,7 @@ another location Popo's Makefile has to be changed accordingly.
 ## License
 
 **Copyright (C) 2016-2020 Tobias König <mailto:tn@movb.de>**
+
 **Copyright (C) 2014-2016 Tobias M.-Nissen <mailto:tn@movb.de>**
 
 This program is free software: you can redistribute it and/or modify it under
